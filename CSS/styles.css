@@ -1,0 +1,172 @@
+/*soft reset CSS*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image:url('https://airbus-h.assetsadobe2.com/is/image/content/dam/corporate-topics/innovation/Innovation-future-technology-advanced-analytics.jpg?wid=1920&fit=fit,1&qlt=85,0');
+    background-size: flex 100vh;
+    color: whitesmoke;
+    font-family: 'Kalam', cursive;
+    font-size: 12px;
+    height: 100vh;
+    }
+
+  @media (min-width: 400px){
+   
+   body{
+    font-size: 14px;
+   }
+
+  }
+
+  /*breakpoint*/
+  @media (min-width: 600px){
+   
+    body{
+     font-size: 18px;
+    }
+ 
+   }
+
+   @media (min-width: 1200px){
+   
+    body{
+     font-size: 22px;
+    }
+ 
+   } 
+
+  header{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  
+  a{
+    color:tomato;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  .menu a{
+    display:block;  
+    font-family: 'Squada One', cursive;
+    padding:20px 30px;
+    transition: background-color 5s, color 2s;
+  }
+
+  .menu a:hover{
+   background-color: rgba(203, 173, 218, 0.363);
+   color: white;
+  }
+
+  .menu ul{
+    display: flex;
+    justify-content:space-around;
+  }
+  
+  .menu li{
+    list-style: none;
+  }
+  
+  .site-subtitle,
+  .site-title{
+    color:whitesmoke;
+    text-align: center;
+  }
+
+  .site-title{
+    font-size:4em;
+    font-family: 'Audiowide', cursive;
+  }
+  
+  .site-subtitle{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2em;
+  }
+  
+  .paragraph{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2em;
+    text-align: center;
+    
+  }
+  
+  .aboutme{
+    background-image: url('https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal-7.jpg');
+    background-size: flex 100vh;
+    padding: 6em;
+    height:100vh;
+    width:100vw;
+  }
+
+  .contact h2,
+  .myjourney h2 {
+    font-family: 'Audiowide', cursive;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    }
+  
+  .myjourney {
+    background-image: url('https://wallpaperaccess.com/full/1089679.png');
+    background-size: flex 100vh;
+    padding: 2em;
+    height:100vh;
+    width:100vw;
+  }
+
+  .myjourney figure{
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+  }
+
+  @media(min-width: 560px){
+    .grid{
+     grid-template-columns: 240px 240px;
+    }
+  }
+  @media(min-width: 880px){
+    .grid{
+     grid-template-columns: repeat(3, 240px)
+    }
+  }
+
+  @media(min-width: 1024px){
+    .grid{
+     grid-template-columns:  repeat(4, 240px)
+    }
+  }
+  .img-portfolio{
+    height: 240px;
+    width:240px;
+  } 
+
+ .contact{
+    background-color: rgb(210, 147, 235);
+    height:100vh;
+    text-align: center;
+  }
+
+ .gridicons{
+  grid-template-columns: 100px 100px 100px 100px;
+ }

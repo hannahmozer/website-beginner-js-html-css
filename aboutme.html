@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Mozer</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Kalam&family=Open+Sans&family=Squada+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3aa6749d1.js" crossorigin="anonymous"></script>
+    <script>
+        function greet()
+            {
+                let name = document.querySelector('#name').value;
+                if (name === '')
+                {
+                    name = 'World';
+                }
+                document.querySelector('#result').innerHTML = 'Hello, ' + name + '!';
+            }
+    </script>
+    
+</head>
+
+<body>
+    
+    <header>
+        
+        <nav class="menu">
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            
+        </nav>
+        
+         <section class="aboutme">
+             
+            <form onsubmit="greet(); return false;">What's your name?</input>
+            <input type="text" id="name">
+            <input type="submit">
+        </form>
+        
+        <div>    
+         
+        <h1 class="site-title"><div id="result">
+            Hello!
+        </div></h1>
+        
+        <h2 class="site-subtitle">My name is Hannah,</h2>
+        
+        <p class= "paragraph">I grew up between the blue waters of the Atlantic Ocean and the green Rainforest of Rio de Janeiro. I am in a career transition. I wanted to build things, so I decided to join the bootcamp and start coding. Technology is a passion of mine and I enjoy nothing more than learning the trends that technology is taking in order to work more efficiently and see progress and success. I love seeing the big picture mapped out for technology needs.</p>
+        <p class= "paragraph">And now I am finishing CS50 :)</p>
+        
+    </div>
+    
+    </section>
+    
+    </header>
+    
+</body>
+
+</html>
